@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Strike&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #1E201E;
+    overflow-x: hidden;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    position: fixed;
+    top: 0.5em;
+    background-color: transparent;
+    justify-content: space-between;
+    height: 2em;
+    width: 100%;
+    transition: 0.5s;
+}
+.nav h1{
+    color: #FAF9F6;
+    font-family: 'Protest Strike';
+    cursor: pointer;
+}
+.nav i{
+    color: #FAF9F6;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.logo{
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+}
+.menu-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+}
+.left-side{
+    display: flex;
+    align-items: center;
+}
+.left-side h1{
+    font-weight: 100;
+    font-size: 14px;
+}
+.left-side i{
+    margin-left: 1em;
+}
+img{
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.line{
+    border-bottom: 1px solid #697565;
+    margin-bottom: 2em;
+}
+.hero{
+    margin-top: 5em;
+    margin-left: 1em;
+    width: 90%;
+    font-family: 'PT Sans';
+    color: #FAF9F6;
+    font-weight: 100;
+    font-size: 16px;
+}
+.author{
+    display: flex;
+    align-items: center;
+}
+.author img{
+    margin-right: 0.5em;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+u:hover{
+    text-decoration: none;
+    color: #FAF9F6;
+    cursor: pointer;
+}
+.by{
+    color: #697565;
+}
+.by p{
+    font-size: 10px;
+}
+.cover-image{
+    display: flex;
+    justify-content: center;
+    margin-block: 1em;
+}
+.cover-image img{
+    position: absolute;
+    width: 200px;
+}
+.close{
+    transition: 0.3s;
+    z-index: 2;
+}
+.close:hover{
+    opacity: 0;
+}
+.main-content{
+    margin-top: 25em;
+    margin-inline: 1em;
+}
+.main-content p{
+    color: #FAF9F6;
+    line-height: 28px;
+    margin-bottom: 1em;
+}
+.sec{
+    display: flex;
+    margin-bottom: 1em;
+}
+.sec img{
+    transition: 0.3s;
+}
+.sec img:hover{
+    transform: scale(1.2);
+}
+.section-one img{
+    margin-left: 1em;
+    width: 150px;
+}
+.section-two img{
+    margin-right: 1em;
+    width: 150px;
+}
+.section-three img{
+    margin-left: 1em;
+    width: 150px;
+}
+
+
+
+.images{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 1vw;
+    top: 1em;
+}
+.image:hover{
+    transform: scale(1.2);
+    z-index: 10;
+}
+.image{
+    position: absolute;
+    transition: 0.3s;
+}
+.one{
+    top: 25em;
+    left: 1em;
+    width: 150px;
+    height: 150px;
+    z-index: 3;
+}
+.two{
+    top: 29em;
+    left: 6em;
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+}
+.three{
+    top: 26em;
+    left: 12em;
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+}
+
+
+.up-next{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'PT Sans';
+    margin-top: 3em;
+    margin-left: 0.5em;
+    
+}
+.article-img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-right: 1em;
+    transition: 0.2s;
+}
+.up-next h1,.up-next h3{
+    color: #FAF9F6;
+}
+.up-next p{
+    color: #697565;
+}
+.article{
+    display: flex;
+    margin-left: 1em;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+
+
+@media only screen and (min-width: 600px){
+    .logo{
+        margin-left: 3em;
+    }
+    .left-side{
+        margin-right: 3em;
+    }
+    .left-side h1{
+        font-size: 22px;
+    }
+    .hero{
+        width: 50%;
+    }
+    .hero h1{
+        font-size: 36px;
+    }
+    .by p{
+        font-size: 14px;
+    }
+    .cover-image img{
+        width: 300px;
+    }
+    .one{
+        left: 26em;
+        top: 24em;
+        width: 200px;
+        height: 200px;
+        z-index: 3;
+    }
+    .two{
+        left: 36em;
+        top: 28em;
+        width: 180px;
+        height: 180px;
+        z-index: 2;
+    }
+    .three{
+        left: 45em;
+        top: 25em;
+        width: 200px;
+        height: 200px;
+        z-index: 2;
+    }
+    .main-content{
+        width: 45%;
+        margin-top: 30em;
+    }
+    .main-content p{
+        line-height: 36px;
+        font-size: 24px;
+    }
+    .section-one img{
+        margin-left: 8em;
+        width: 160px;
+    }
+    .section-two img{
+        margin-right: 1em;
+        width: 160px;
+    }
+    .section-three img{
+        margin-left: 1em;
+        width: 160px;
+    }
+    .up-next{
+        width: 50%;
+    }
+}
